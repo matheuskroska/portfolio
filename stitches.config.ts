@@ -1,6 +1,10 @@
 import { createStitches } from '@stitches/react';
 
-const baseTokens = {
+interface BaseTokensProps {
+  value?: string
+}
+
+const baseTokens =<BaseTokensProps> {
   theme: {
     colors: {
       gray500: 'hsl(206,10%,76%)',
@@ -41,18 +45,18 @@ const baseTokens = {
   },
   utils: {
     // A property for applying width/height together
-    size: (value) => ({
+    size: (value : BaseTokensProps) => ({
       width: value,
       height: value,
     }),
 
     // A property to apply linear gradient
-    linearGradient: (value) => ({
+    linearGradient: (value : BaseTokensProps) => ({
       backgroundImage: `linear-gradient(${value})`,
     }),
 
     // An abbreviated property for background-color
-    bg: (value) => ({
+    bg: (value : BaseTokensProps) => ({
       backgroundColor: value,
     }),
   },
