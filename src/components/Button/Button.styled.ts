@@ -1,8 +1,8 @@
 // import { styled } from '@stitches/react';
 import { VariantProps } from '@stitches/react';
-import { setPrefix } from '../../../stitches.config';
+import { prefixedStitches } from '../../../stitches.config';
 
-const { styled } = setPrefix('button');
+const { styled } = prefixedStitches('button');
 
 export const StyledButton = styled('button', {
   borderRadius: '9999px',
