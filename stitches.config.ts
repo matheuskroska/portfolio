@@ -1,70 +1,111 @@
 import { createStitches } from '@stitches/react';
 
-interface BaseTokensProps {
+import {
+  gray,
+  blue,
+  red,
+  green,
+  grayDark,
+  blueDark,
+  redDark,
+  greenDark,
+} from '@radix-ui/colors';
+
+interface createStyledProps {
+  prefix?: string,
   value?: string
 }
 
-const baseTokens =<BaseTokensProps> {
-  theme: {
-    colors: {
-      gray500: 'hsl(206,10%,76%)',
-      blue500: 'hsl(206,100%,50%)',
-      purple500: 'hsl(252,78%,60%)',
-      green500: 'hsl(148,60%,60%)',
-      red500: 'hsl(352,100%,62%)',
-    },
-    space: {
-      1: '5px',
-      2: '10px',
-      3: '15px',
-    },
-    fontSizes: {
-      1: '12px',
-      2: '13px',
-      3: '15px',
-    },
-    fonts: {
-      untitled: 'Untitled Sans, apple-system, sans-serif',
-      mono: 'Söhne Mono, menlo, monospace',
-    },
-    fontWeights: {},
-    lineHeights: {},
-    letterSpacings: {},
-    sizes: {},
-    borderWidths: {},
-    borderStyles: {},
-    radii: {},
-    shadows: {},
-    zIndices: {},
-    transitions: {},
-  },
-  media: {
-    bp1: '(min-width: 640px)',
-    bp2: '(min-width: 768px)',
-    bp3: '(min-width: 1024px)',
-  },
-  utils: {
-    // A property for applying width/height together
-    size: (value : BaseTokensProps) => ({
-      width: value,
-      height: value,
-    }),
 
-    // A property to apply linear gradient
-    linearGradient: (value : BaseTokensProps) => ({
-      backgroundImage: `linear-gradient(${value})`,
-    }),
-
-    // An abbreviated property for background-color
-    bg: (value : BaseTokensProps) => ({
-      backgroundColor: value,
-    }),
-  },
+const createPrefix = (componentRef : string, prefix : string) => {
+  return componentRef + "_" +prefix
 }
 
-export const prefixedStitches = (prefix: string) => {
-  return createStitches({
-    prefix: prefix,
-    ...baseTokens
+const createStyled = (prefix? : createStyledProps["prefix"]) =>
+  createStitches({
+    prefix,
+    theme: {
+      colors: {
+        hiContrast: "hsl(206,10%,5%)",
+        loContrast: "white",
+
+        ...gray,
+        ...blue,
+        ...red,
+        ...green,
+        ...grayDark,
+        ...blueDark,
+        ...redDark,
+        ...greenDark,
+
+        // gray100: "hsl(206,22%,99%)",
+        // gray200: "hsl(206,12%,97%)",
+        // gray300: "hsl(206,11%,92%)",
+        // gray400: "hsl(206,10%,84%)",
+        // gray500: "hsl(206,10%,76%)",
+        // gray600: "hsl(206,10%,44%)",
+
+        // purple100: "hsl(252,100%,99%)",
+        // purple200: "hsl(252,100%,98%)",
+        // purple300: "hsl(252,100%,94%)",
+        // purple400: "hsl(252,75%,84%)",
+        // purple500: "hsl(252,78%,60%)",
+        // purple600: "hsl(252,80%,53%)"
+      },
+      space: {
+        1: "5px",
+        2: "10px",
+        3: "15px",
+        4: "20px",
+        5: "25px",
+        6: "35px"
+      },
+      sizes: {
+        1: "5px",
+        2: "10px",
+        3: "15px",
+        4: "20px",
+        5: "25px",
+        6: "35px"
+      },
+      fontSizes: {
+        1: "12px",
+        2: "13px",
+        3: "15px",
+        4: "17px",
+        5: "19px",
+        6: "21px"
+      },
+      fonts: {
+        system: "system-ui"
+      }
+    },
+    utils: {
+      marginX: (value: createStyledProps["value"]) => ({
+        marginLeft: value,
+        marginRight: value
+      }),
+      marginY: (value: createStyledProps["value"]) => ({
+        marginTop: value,
+        marginBottom: value
+      }),
+      paddingX: (value: createStyledProps["value"]) => ({
+        paddingLeft: value,
+        paddingRight: value
+      }),
+      paddingY: (value: createStyledProps["value"]) => ({
+        paddingTop: value,
+        paddingBottom: value
+      })
+    },
+    media: {
+      bp1: "@media (min-width: 520px)",
+      bp2: "@media (min-width: 900px)"
+    }
   });
-};
+
+export { createStyled };
+
+export {createPrefix}
+
+export const { styled } = createStyled();

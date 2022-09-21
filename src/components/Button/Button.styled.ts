@@ -1,21 +1,21 @@
-// import { styled } from '@stitches/react';
 import { VariantProps } from '@stitches/react';
-import { prefixedStitches } from '../../../stitches.config';
+import {createStyled, createPrefix} from '../../../stitches.config'
 
-const { styled } = prefixedStitches('button');
-
-export const StyledButton = styled('button', {
+export const StyledButton = createStyled(createPrefix("button", "StyledButton")).styled('button', {
+  marginX: "10px",
+  paddingX: "3px",
   borderRadius: '9999px',
   fontSize: '13px',
   padding: '10px 15px',
   '&:hover': {
-    backgroundColor: 'lightgray',
+    backgroundColor: 'LightGray',
   },
 
   variants: {
     variant: {
       primary: {
-        backgroundColor: 'blue',
+        backgroundColor: '$blue10',
+        
       },
       secondary: {
         backgroundColor: 'red',
