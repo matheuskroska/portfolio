@@ -18,8 +18,6 @@ interface createStyledProps {
 }
 
 
-
-
 const createPrefix = (componentRef : string, prefix : string) => {
   return componentRef + "_" +prefix
 }
@@ -94,8 +92,14 @@ const createStyled = (prefix? : createStyledProps["prefix"]) =>
     }
   });
 
-const globalStyles = globalCss({reset});
 
+
+const resetCss = globalCss(reset);
+const globalStyles = globalCss({
+  body: { fontFamily: "Inter" },
+});
+
+resetCss()
 globalStyles()
 
 export { createStyled,createPrefix };

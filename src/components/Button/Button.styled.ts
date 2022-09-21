@@ -8,7 +8,7 @@ export const StyledButton = createStyled(createPrefix("button", "StyledButton"))
   fontSize: '13px',
   padding: '10px 15px',
   '&:hover': {
-    backgroundColor: 'LightGray',
+    backgroundColor: '$blue7',
   },
 
   variants: {
