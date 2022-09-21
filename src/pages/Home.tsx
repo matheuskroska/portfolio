@@ -14,8 +14,8 @@ function Home() {
         <StyledSwiperSlider>
           <Card
             image={<AspectRatioDemo />}
-            title={'title'}
-            subtitle={'sub'}
+            title={'Title'}
+            subtitle={'Sub'}
             text={
               'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, doloribus voluptatum, et deleniti nulla odit maxime, officiis eos maiores magnam qui assumenda? Ab illum adipisci expedita dolorum laboriosam quaerat nam!'
             }
@@ -24,8 +24,8 @@ function Home() {
         <StyledSwiperSlider>
           <Card
             image={<AspectRatioDemo />}
-            title={'title'}
-            subtitle={'sub'}
+            title={'Title'}
+            subtitle={'Sub'}
             text={
               'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, doloribus voluptatum, et deleniti nulla odit maxime, officiis eos maiores magnam qui assumenda? Ab illum adipisci expedita dolorum laboriosam quaerat nam!'
             }
@@ -34,8 +34,8 @@ function Home() {
         <StyledSwiperSlider>
           <Card
             image={<AspectRatioDemo />}
-            title={'title'}
-            subtitle={'sub'}
+            title={'Title'}
+            subtitle={'Sub'}
             text={
               'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, doloribus voluptatum, et deleniti nulla odit maxime, officiis eos maiores magnam qui assumenda? Ab illum adipisci expedita dolorum laboriosam quaerat nam!'
             }

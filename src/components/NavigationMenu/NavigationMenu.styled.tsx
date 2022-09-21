@@ -55,6 +55,11 @@ const StyledMenu = createStyled(
   justifyContent: 'center',
   width: '100vw',
   zIndex: 9999,
+
+  '& > div': {
+    width: '100%',
+    maxWidth: '920px',
+  },
 });
 
 const StyledList = createStyled(
@@ -68,6 +73,7 @@ const StyledList = createStyled(
   borderRadius: 6,
   listStyle: 'none',
   boxShadow: '0 2px 10px $blackA7',
+  width: '100%',
 });
 
 const itemStyles = {
