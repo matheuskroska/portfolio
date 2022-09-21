@@ -1,4 +1,5 @@
-import { createStitches } from '@stitches/react';
+import { createStitches, globalCss } from '@stitches/react';
+import { reset } from "stitches-reset";
 
 import {
   gray,
@@ -15,6 +16,8 @@ interface createStyledProps {
   prefix?: string,
   value?: string
 }
+
+
 
 
 const createPrefix = (componentRef : string, prefix : string) => {
@@ -38,19 +41,6 @@ const createStyled = (prefix? : createStyledProps["prefix"]) =>
         ...redDark,
         ...greenDark,
 
-        // gray100: "hsl(206,22%,99%)",
-        // gray200: "hsl(206,12%,97%)",
-        // gray300: "hsl(206,11%,92%)",
-        // gray400: "hsl(206,10%,84%)",
-        // gray500: "hsl(206,10%,76%)",
-        // gray600: "hsl(206,10%,44%)",
-
-        // purple100: "hsl(252,100%,99%)",
-        // purple200: "hsl(252,100%,98%)",
-        // purple300: "hsl(252,100%,94%)",
-        // purple400: "hsl(252,75%,84%)",
-        // purple500: "hsl(252,78%,60%)",
-        // purple600: "hsl(252,80%,53%)"
       },
       space: {
         1: "5px",
@@ -104,8 +94,11 @@ const createStyled = (prefix? : createStyledProps["prefix"]) =>
     }
   });
 
-export { createStyled };
+const globalStyles = globalCss({reset});
 
-export {createPrefix}
+globalStyles()
 
+export { createStyled,createPrefix };
 export const { styled } = createStyled();
+
+
