@@ -33,15 +33,6 @@ const createStyled = (prefix?: createStyledProps['prefix']) =>
       colors: {
         hiContrast: 'hsl(206,10%,5%)',
         loContrast: 'white',
-
-        // ...gray,
-        // ...blue,
-        // ...red,
-        // ...green,
-        // ...grayDark,
-        // ...blueDark,
-        // ...redDark,
-        // ...greenDark,
         ...violet,
         ...blackA,
         ...purple,

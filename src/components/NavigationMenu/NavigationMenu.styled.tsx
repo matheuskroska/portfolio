@@ -3,7 +3,7 @@ import { keyframes } from '@stitches/react';
 import { createStyled, createPrefix } from '../../../stitches.config';
 import * as NavigationMenuPrimitive from '@radix-ui/react-navigation-menu';
 import { CaretDownIcon } from '@radix-ui/react-icons';
-import AvatarDemo from '../Avatar/Avatar.styled';
+import AvatarDemo from '../Avatar';
 
 const enterFromRight = keyframes({
   from: { transform: 'translateX(200px)', opacity: 0 },
@@ -54,7 +54,7 @@ const StyledMenu = createStyled(
   display: 'flex',
   justifyContent: 'center',
   width: '100vw',
-  zIndex: 1,
+  zIndex: 9999,
 });
 
 const StyledList = createStyled(
@@ -304,17 +304,6 @@ export const ContentListItemCallout = React.forwardRef(
         }}
       >
         <AvatarDemo></AvatarDemo>
-        {/* <svg
-          aria-hidden
-          width="38"
-          height="38"
-          viewBox="0 0 25 25"
-          fill="white"
-        >
-          <path d="M12 25C7.58173 25 4 21.4183 4 17C4 12.5817 7.58173 9 12 9V25Z"></path>
-          <path d="M12 0H4V8H12V0Z"></path>
-          <path d="M17 8C19.2091 8 21 6.20914 21 4C21 1.79086 19.2091 0 17 0C14.7909 0 13 1.79086 13 4C13 6.20914 14.7909 8 17 8Z"></path>
-        </svg> */}
         <LinkTitle
           css={{
             fontSize: 18,
@@ -323,7 +312,7 @@ export const ContentListItemCallout = React.forwardRef(
             marginBottom: 7,
           }}
         >
-          Meu Portolio
+          Meu Portfólio
         </LinkTitle>
         <LinkText
           css={{
