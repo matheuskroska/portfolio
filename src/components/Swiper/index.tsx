@@ -17,7 +17,7 @@ export const Swiper = ({ children }: any) => {
         clickable: true,
       }}
       navigation={false}
-      modules={[Pagination, Navigation]}
+      modules={[Autoplay, Pagination, Navigation]}
     >
       {children}
     </StyledSwiper>
