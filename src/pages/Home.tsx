@@ -28,17 +28,36 @@ import { ReactComponent as IconTypescript } from '../assets/images/icons/iconTyp
 import { ReactComponent as IconVite } from '../assets/images/icons/iconVite.svg';
 import { Footer } from '../components/Footer';
 
+import nutriplan from '../assets/images/projects/nutriplan.png';
+import groupgator from '../assets/images/projects/groupgator.png';
+
 function Home() {
   return (
     <>
-      <Header>Olá, eu sou o Matheus.</Header>
+      <Header>Matheus Kroska</Header>
       <NavigationMenuDemo></NavigationMenuDemo>
       <Swiper>
-        <StyledSwiperSlider>
+        {/* <StyledSwiperSlider>
           <Card
-            image={<AspectRatioDemo />}
+            image={<AspectRatioDemo image={''} />}
             title={'Title'}
             subtitle={'Sub'}
+            text={
+              'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, doloribus voluptatum, et deleniti nulla odit maxime, officiis eos maiores magnam qui assumenda? Ab illum adipisci expedita dolorum laboriosam quaerat nam!'
+            }
+          >
+            <IconReact />
+            <IconCreate />
+            <IconJavascript />
+            <IconFirebase />
+            <IconStyled />
+          </Card>
+        </StyledSwiperSlider> */}
+        <StyledSwiperSlider>
+          <Card
+            image={<AspectRatioDemo image={groupgator} />}
+            title={'Groupgator'}
+            subtitle={'reunião de grupos'}
             text={
               'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, doloribus voluptatum, et deleniti nulla odit maxime, officiis eos maiores magnam qui assumenda? Ab illum adipisci expedita dolorum laboriosam quaerat nam!'
             }
@@ -52,23 +71,19 @@ function Home() {
         </StyledSwiperSlider>
         <StyledSwiperSlider>
           <Card
-            image={<AspectRatioDemo />}
-            title={'Title'}
-            subtitle={'Sub'}
+            image={<AspectRatioDemo image={nutriplan} />}
+            title={'Nutriplan'}
+            subtitle={'alimentação saúdavel'}
             text={
               'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, doloribus voluptatum, et deleniti nulla odit maxime, officiis eos maiores magnam qui assumenda? Ab illum adipisci expedita dolorum laboriosam quaerat nam!'
             }
-          ></Card>
-        </StyledSwiperSlider>
-        <StyledSwiperSlider>
-          <Card
-            image={<AspectRatioDemo />}
-            title={'Title'}
-            subtitle={'Sub'}
-            text={
-              'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, doloribus voluptatum, et deleniti nulla odit maxime, officiis eos maiores magnam qui assumenda? Ab illum adipisci expedita dolorum laboriosam quaerat nam!'
-            }
-          ></Card>
+          >
+            <IconReact />
+            <IconCreate />
+            <IconJavascript />
+            <IconFirebase />
+            <IconStyled />
+          </Card>
         </StyledSwiperSlider>
       </Swiper>
       <AccordionDemo></AccordionDemo>
