@@ -13,9 +13,14 @@ export const StyledSwiper = createStyled(
   marginTop: '50px',
   boxShadow: '0 2px 10px $blackA7',
   borderRadius: '6px',
+  backgroundColor: 'White',
 
   '& .swiper-button-next:after, .swiper-button-prev:after': {
     content: '',
+  },
+
+  '& .swiper-pagination-bullet-active': {
+    background: '$violet11',
   },
 });
 

@@ -13,13 +13,11 @@ export const Swiper = ({ children }: any) => {
         disableOnInteraction: false,
       }}
       speed={600}
-      parallax={true}
       pagination={{
         clickable: true,
       }}
       navigation={false}
-      modules={[Autoplay, Pagination, Navigation]}
-      className="mySwiper"
+      modules={[Pagination, Navigation]}
     >
       {children}
     </StyledSwiper>

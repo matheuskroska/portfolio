@@ -4,16 +4,18 @@ const componentRef = 'header';
 
 export const StyledHeader = createStyled(
   createPrefix(componentRef, 'StyledHeader')
-).styled('header', {
-  height: '50px',
-});
+).styled('header', {});
 
 export const StyledNav = createStyled(
   createPrefix(componentRef, 'StyledNav')
 ).styled('nav', {
-  maxWidth: '1280px',
-  margin: '0 auto',
+  maxWidth: '920px',
+  margin: '50px auto',
   padding: '0 10px',
+  textAlign: 'center',
+  color: '$violet11',
+  fontSize: '22px',
+  fontWeight: '500',
 });
 
 export const StyledNavList = createStyled(

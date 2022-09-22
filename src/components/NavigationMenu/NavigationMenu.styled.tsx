@@ -54,7 +54,12 @@ const StyledMenu = createStyled(
   display: 'flex',
   justifyContent: 'center',
   width: '100vw',
+  maxWidth: '920px',
   zIndex: 9999,
+  margin: '0 auto',
+  boxShadow: '0 2px 10px $blackA7',
+  borderRadius: 6,
+  backgroundColor: 'White',
 });
 
 const StyledList = createStyled(
@@ -65,9 +70,7 @@ const StyledList = createStyled(
   justifyContent: 'center',
   backgroundColor: 'white',
   padding: 4,
-  borderRadius: 6,
   listStyle: 'none',
-  boxShadow: '0 2px 10px $blackA7',
   width: '100%',
 });
 

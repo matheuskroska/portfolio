@@ -26,10 +26,34 @@ export const StyledTitle = createStyled(
 export const StyledSubtitle = createStyled(
   createPrefix(componentRef, 'StyledSubtitle')
 ).styled('h4', {
-  fontSize: '15px',
+  fontSize: '16px',
   color: '$mauve11',
-  fontWeight: 'bold',
+  fontWeight: '500',
   marginBottom: '10px',
+  '& svg': {
+    width: '18px',
+    height: '18px',
+    path: {
+      fill: '$violet11',
+    },
+  },
+});
+
+export const StyledStack = createStyled(
+  createPrefix(componentRef, 'StyledStack')
+).styled('div', {
+  display: 'flex',
+  gap: '0 13px',
+  '& svg': {
+    width: '19px',
+    height: '19px',
+    path: {
+      fill: '$violet11',
+    },
+    '&.iconStyled': {
+      scale: '1.5',
+    },
+  },
 });
 
 export const StyledText = createStyled(
@@ -40,6 +64,7 @@ export const StyledText = createStyled(
   fontSize: '15px',
   color: '$mauve11',
   lineHeight: '1.4',
+  marginBottom: '10px',
 });
 
 export const StyledImg = createStyled(

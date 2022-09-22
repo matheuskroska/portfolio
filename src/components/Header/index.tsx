@@ -7,7 +7,7 @@ interface HeaderProps {
 export const Header = ({ children, ...rest }: HeaderProps) => {
   return (
     <StyledHeader {...rest}>
-      <StyledNav>{children}</StyledNav>
+      <StyledNav as={'h1'}>{children}</StyledNav>
     </StyledHeader>
   );
 };

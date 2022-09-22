@@ -96,7 +96,10 @@ const createStyled = (prefix?: createStyledProps['prefix']) =>
 
 const resetCss = globalCss(reset);
 const globalStyles = globalCss({
-  body: { fontFamily: 'Untitled Sans, -apple-system, system-ui, sans-serif;' },
+  body: {
+    fontFamily: 'Untitled Sans, -apple-system, system-ui, sans-serif;',
+    backgroundColor: 'hsl(0deg 0% 0% / 1%);',
+  },
   '*': { boxSizing: 'border-box', margin: '0', padding: '0' },
 });
 

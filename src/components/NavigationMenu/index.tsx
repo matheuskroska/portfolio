@@ -1,3 +1,4 @@
+import { GitHubLogoIcon, LinkedInLogoIcon } from '@radix-ui/react-icons';
 import {
   ContentList,
   ContentListItem,
@@ -62,11 +63,23 @@ export const NavigationMenuDemo = () => {
         </NavigationMenuItem>
 
         <NavigationMenuItem>
-          <NavigationMenuLink href="">Linkedin</NavigationMenuLink>
+          <NavigationMenuLink
+            css={{ display: 'flex', alignItems: 'center', gap: '0 5px' }}
+            href=""
+          >
+            Linkedin
+            <LinkedInLogoIcon />
+          </NavigationMenuLink>
         </NavigationMenuItem>
 
         <NavigationMenuItem>
-          <NavigationMenuLink href="">Github</NavigationMenuLink>
+          <NavigationMenuLink
+            css={{ display: 'flex', alignItems: 'center', gap: '0 5px' }}
+            href=""
+          >
+            Github
+            <GitHubLogoIcon />
+          </NavigationMenuLink>
         </NavigationMenuItem>
 
         <NavigationMenuIndicator />

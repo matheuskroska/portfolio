@@ -2,6 +2,7 @@ import { ReactNode } from 'react';
 import {
   StyledCard,
   StyledImg,
+  StyledStack,
   StyledSubtitle,
   StyledText,
   StyledTitle,
@@ -30,6 +31,7 @@ export const Card = ({
         <StyledTitle>{title}</StyledTitle>
         <StyledSubtitle>{subtitle}</StyledSubtitle>
         <StyledText>{text}</StyledText>
+        <StyledStack>{children}</StyledStack>
       </StyledWrapper>
       <StyledWrapper>
         <StyledImg>{image}</StyledImg>

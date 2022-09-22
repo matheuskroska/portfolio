@@ -1,4 +1,3 @@
-import React from 'react';
 import { styled, keyframes } from '@stitches/react';
 import { mauve } from '@radix-ui/colors';
 import * as HoverCardPrimitive from '@radix-ui/react-hover-card';
@@ -58,12 +57,10 @@ function Content({ children, ...props }: any) {
   );
 }
 
-// Exports
 export const HoverCard = HoverCardPrimitive.Root;
 export const HoverCardTrigger = HoverCardPrimitive.Trigger;
 export const HoverCardContent = Content;
 
-// Your app...
 const Flex = styled('div', { display: 'flex' });
 
 const ImageTrigger = styled('a', {
