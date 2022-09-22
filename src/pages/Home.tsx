@@ -5,6 +5,14 @@ import { Header } from '../components/Header';
 import { NavigationMenuDemo } from '../components/NavigationMenu';
 import { Swiper } from '../components/Swiper';
 import { StyledSwiperSlider } from '../components/Swiper/Swiper.styled';
+import {
+  DiscordLogoIcon,
+  EnvelopeClosedIcon,
+  GitHubLogoIcon,
+  LinkedInLogoIcon,
+  StitchesLogoIcon,
+  TwitterLogoIcon,
+} from '@radix-ui/react-icons';
 
 import { ReactComponent as IconCreate } from '../assets/images/icons/iconCreate.svg';
 import { ReactComponent as IconCss } from '../assets/images/icons/iconCss.svg';
@@ -18,6 +26,7 @@ import { ReactComponent as IconStorybook } from '../assets/images/icons/iconStor
 import { ReactComponent as IconStyled } from '../assets/images/icons/iconStyled.svg';
 import { ReactComponent as IconTypescript } from '../assets/images/icons/iconTypescript.svg';
 import { ReactComponent as IconVite } from '../assets/images/icons/iconVite.svg';
+import { Footer } from '../components/Footer';
 
 function Home() {
   return (
@@ -63,6 +72,12 @@ function Home() {
         </StyledSwiperSlider>
       </Swiper>
       <AccordionDemo></AccordionDemo>
+      <Footer>
+        <LinkedInLogoIcon />
+        <TwitterLogoIcon />
+        <DiscordLogoIcon />
+        <EnvelopeClosedIcon />
+      </Footer>
     </>
   );
 }
