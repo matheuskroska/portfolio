@@ -21,6 +21,7 @@ const StyledAccordion = styled(AccordionPrimitive.Root, {
   boxShadow: `0 2px 10px ${blackA.blackA4}`,
   margin: '0 auto',
   marginTop: '50px',
+  marginBottom: '50px',
 });
 
 const StyledItem = styled(AccordionPrimitive.Item, {

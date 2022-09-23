@@ -8,8 +8,6 @@ export const StyledFooter = createStyled(
   position: 'relative',
   height: '100px',
   backgroundColor: 'white',
-  width: '100vw',
-  // boxShadow: '0 2px 10px $blackA7',
   display: 'flex',
   alignItems: 'center',
   justifyContent: 'center',
