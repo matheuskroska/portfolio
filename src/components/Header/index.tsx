@@ -18,7 +18,7 @@ export const Header = ({ children, ...rest }: HeaderProps) => {
           color: '$mauve11',
         }}
       >
-        Olá, meu nome é
+        Hi, my name is
       </StyledText>
       <StyledText
         css={{ marginTop: '0', fontSize: '44px', marginBottom: '5px' }}
@@ -37,7 +37,7 @@ export const Header = ({ children, ...rest }: HeaderProps) => {
           color: '$mauve11',
         }}
       >
-        Eu construo coisas para a web.
+        I build things for the web.
       </StyledText>
     </StyledHeader>
   );

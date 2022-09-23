@@ -65,7 +65,8 @@ export const NavigationMenuDemo = () => {
         <NavigationMenuItem>
           <NavigationMenuLink
             css={{ display: 'flex', alignItems: 'center', gap: '0 5px' }}
-            href=""
+            href="https://www.linkedin.com/in/matheus-kroska/"
+            target="_blank"
           >
             Linkedin
             <LinkedInLogoIcon />
@@ -75,7 +76,8 @@ export const NavigationMenuDemo = () => {
         <NavigationMenuItem>
           <NavigationMenuLink
             css={{ display: 'flex', alignItems: 'center', gap: '0 5px' }}
-            href=""
+            href="https://github.com/matheuskroska"
+            target="_blank"
           >
             Github
             <GitHubLogoIcon />

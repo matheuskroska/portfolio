@@ -6,7 +6,6 @@ import {
 } from '@radix-ui/react-icons';
 import { HashRouter, Route, Routes } from 'react-router-dom';
 import { Footer } from './components/Footer';
-import { Header } from './components/Header';
 import Home from './pages/Home';
 import NotFound from './pages/NotFound';
 
@@ -24,10 +23,14 @@ export function WrappedApp() {
     <HashRouter>
       <App />
       <Footer>
-        <LinkedInLogoIcon />
+        <a href="https://www.linkedin.com/in/matheus-kroska/" target="_blank">
+          <LinkedInLogoIcon />
+        </a>
         <TwitterLogoIcon />
         <DiscordLogoIcon />
-        <EnvelopeClosedIcon />
+        <a href="mailto:kroskamatheus@gmail.com">
+          <EnvelopeClosedIcon />
+        </a>
       </Footer>
     </HashRouter>
   );

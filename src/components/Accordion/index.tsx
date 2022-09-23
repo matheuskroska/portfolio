@@ -8,9 +8,10 @@ import {
 export const AccordionDemo = () => (
   <Accordion type="single" /*defaultValue="item-1"*/ collapsible>
     <AccordionItem value="item-1">
-      <AccordionTrigger>Is it accessible?</AccordionTrigger>
+      <AccordionTrigger>what did you use to build this site?</AccordionTrigger>
       <AccordionContent>
-        Yes. It adheres to the WAI-ARIA design pattern.
+        react, typescript, raddix primitives, raddix colors and stitches ( also
+        from raddix)
       </AccordionContent>
     </AccordionItem>
 

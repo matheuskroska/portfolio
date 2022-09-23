@@ -18,7 +18,7 @@ export const StyledTitle = createStyled(
 ).styled('h2', {
   color: '$violet11',
   marginBottom: '5px',
-  fontSize: '17px',
+  fontSize: '15px',
   fontWeight: '500',
   lineHeight: '1',
 });
@@ -26,9 +26,8 @@ export const StyledTitle = createStyled(
 export const StyledSubtitle = createStyled(
   createPrefix(componentRef, 'StyledSubtitle')
 ).styled('h4', {
-  fontSize: '16px',
-  color: '$mauve11',
-  fontWeight: '500',
+  fontSize: '15px',
+  color: '$violet11',
   marginBottom: '10px',
   '& svg': {
     width: '18px',
@@ -60,11 +59,11 @@ export const StyledText = createStyled(
   createPrefix(componentRef, 'StyledText')
 ).styled('p', {
   maxWidth: '350px',
-  textAlign: 'justify',
+  textAlign: 'left',
   fontSize: '15px',
   color: '$mauve11',
   lineHeight: '1.4',
-  marginBottom: '10px',
+  marginBottom: '20px',
 });
 
 export const StyledImg = createStyled(

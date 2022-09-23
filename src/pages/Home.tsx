@@ -41,9 +41,9 @@ function Home() {
           <Card
             image={<AspectRatioDemo image={groupgator} />}
             title={'Groupgator'}
-            subtitle={'reunião de grupos'}
+            subtitle={'academic project'}
             text={
-              'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, doloribus voluptatum, et deleniti nulla odit maxime, officiis eos maiores magnam qui assumenda? Ab illum adipisci expedita dolorum laboriosam quaerat nam!'
+              'built with React to make an event appointment based on several categories, users can manage their events.'
             }
           >
             <IconReact />
@@ -57,9 +57,9 @@ function Home() {
           <Card
             image={<AspectRatioDemo image={nutriplan} />}
             title={'Nutriplan'}
-            subtitle={'alimentação saúdavel'}
+            subtitle={'academic project - final project'}
             text={
-              'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, doloribus voluptatum, et deleniti nulla odit maxime, officiis eos maiores magnam qui assumenda? Ab illum adipisci expedita dolorum laboriosam quaerat nam!'
+              'built with React to schedule nutritional appointments and creates nutritional plans, we use sponocular API to get food information'
             }
           >
             <IconReact />
