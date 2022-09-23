@@ -7,14 +7,13 @@ export const StyledSwiper = createStyled(
   createPrefix(componentRef, 'StyledSwiper')
 ).styled(Swiper, {
   width: '100%',
-  height: '100%',
   maxWidth: '920px',
   margin: '0 auto',
   marginTop: '50px',
   boxShadow: '0 2px 10px $blackA7',
   borderRadius: '6px',
   backgroundColor: 'White',
-
+  flexShrink: '0',
   '& .swiper-button-next:after, .swiper-button-prev:after': {
     content: '',
   },

@@ -5,16 +5,16 @@ const componentRef = 'footer';
 export const StyledFooter = createStyled(
   createPrefix(componentRef, 'StyledFooter')
 ).styled('footer', {
+  position: 'relative',
   height: '100px',
   backgroundColor: 'white',
-  position: 'fixed',
-  bottom: '0',
   width: '100vw',
-  boxShadow: '0 2px 10px $blackA7',
+  // boxShadow: '0 2px 10px $blackA7',
   display: 'flex',
   alignItems: 'center',
   justifyContent: 'center',
   flexDirection: 'column',
+  marginTop: '50px',
 
   '& .footerWave': {
     position: 'absolute',

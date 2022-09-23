@@ -33,26 +33,10 @@ import groupgator from '../assets/images/projects/groupgator.png';
 
 function Home() {
   return (
-    <>
+    <main>
       <Header>Matheus Kroska</Header>
       <NavigationMenuDemo></NavigationMenuDemo>
       <Swiper>
-        {/* <StyledSwiperSlider>
-          <Card
-            image={<AspectRatioDemo image={''} />}
-            title={'Title'}
-            subtitle={'Sub'}
-            text={
-              'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, doloribus voluptatum, et deleniti nulla odit maxime, officiis eos maiores magnam qui assumenda? Ab illum adipisci expedita dolorum laboriosam quaerat nam!'
-            }
-          >
-            <IconReact />
-            <IconCreate />
-            <IconJavascript />
-            <IconFirebase />
-            <IconStyled />
-          </Card>
-        </StyledSwiperSlider> */}
         <StyledSwiperSlider>
           <Card
             image={<AspectRatioDemo image={groupgator} />}
@@ -87,13 +71,7 @@ function Home() {
         </StyledSwiperSlider>
       </Swiper>
       <AccordionDemo></AccordionDemo>
-      <Footer>
-        <LinkedInLogoIcon />
-        <TwitterLogoIcon />
-        <DiscordLogoIcon />
-        <EnvelopeClosedIcon />
-      </Footer>
-    </>
+    </main>
   );
 }
 
