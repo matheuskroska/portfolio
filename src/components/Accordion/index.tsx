@@ -8,7 +8,7 @@ import {
 export const AccordionDemo = () => (
   <Accordion type="single" /*defaultValue="item-1"*/ collapsible>
     <AccordionItem value="item-1">
-      <AccordionTrigger>what did you use to build this site?</AccordionTrigger>
+      <AccordionTrigger>What did you use to build this site?</AccordionTrigger>
       <AccordionContent>
         react, typescript, raddix primitives, raddix colors and stitches ( also
         from raddix)
@@ -16,18 +16,18 @@ export const AccordionDemo = () => (
     </AccordionItem>
 
     <AccordionItem value="item-2">
-      <AccordionTrigger>Is it unstyled?</AccordionTrigger>
+      <AccordionTrigger>
+        What do you like to do in your spare time?
+      </AccordionTrigger>
       <AccordionContent>
-        Yes. It's unstyled by default, giving you freedom over the look and
-        feel.
+        review coffee shops with my girlfriend, try new things, watch series and
+        movies ;)
       </AccordionContent>
     </AccordionItem>
 
     <AccordionItem value="item-3">
-      <AccordionTrigger>Can it be animated?</AccordionTrigger>
-      <AccordionContent>
-        Yes! You can animate the Accordion with CSS or JavaScript.
-      </AccordionContent>
+      <AccordionTrigger>What is your best technical quality?</AccordionTrigger>
+      <AccordionContent>be able to learn</AccordionContent>
     </AccordionItem>
   </Accordion>
 );
