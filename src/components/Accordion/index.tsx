@@ -20,7 +20,7 @@ export const AccordionDemo = () => (
         What do you like to do in your spare time?
       </AccordionTrigger>
       <AccordionContent>
-        review coffee shops with my girlfriend, try new things, watch series and
+        review coffee shops, try new things, watch series and
         movies ;)
       </AccordionContent>
     </AccordionItem>
